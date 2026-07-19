@@ -1,12 +1,14 @@
+import "./Btn.css";
 type BtnProps = {
   url: string;
   text: string;
+  size?: "small" | "medium" | "large" | "Hero";
 };
 
-function Btn({ url,text }: BtnProps) {
+function Btn({ size = "medium",url,text }: BtnProps) {
   return (
-    <a href={ url }>
-        {text}
+    <a className={`btn btn--${size}`} href={ url }>
+      <span>{text}</span>
     </a>
   );
 }

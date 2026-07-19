@@ -1,0 +1,26 @@
+.attraction-cardList {
+    gap: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.attractionCard {
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    border-radius: var(--radius-lg);
+    img{
+        width: 100%;
+        aspect-ratio: 9 / 5;
+        object-fit: cover;
+    }
+    .attractionCard_inner {
+        padding: 16px;
+        text-align: center;
+    }
+}
+.attractionCard-title {
+    font-size: 18px;
+}
+.attractionCard-text {
+    margin-top: 8px;
+}

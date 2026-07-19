@@ -1,8 +1,8 @@
 export default function FooterLogo() {
   return(
-    <a href="#">
-      <h1>Dreamland</h1>
-      <p>みんなの笑顔が集まる場所</p>
-    </a>
+    <div className="footerLogo">
+      <h1 className="footerLogo-main">Dreamland</h1>
+      <p className="footerLogo-sub">みんなの笑顔が集まる場所</p>
+    </div>
   )
 }

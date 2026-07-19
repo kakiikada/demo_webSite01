@@ -1,0 +1,100 @@
+.footer {
+    position: relative;
+    background-color: var(--color-basic);
+}
+.footer-layout {
+    display: flex;
+    width: 100%;
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 24px var( --inner-md) 82px;
+    background: url(../../../public/images/bg-line.svg) bottom -1.6svw left 0/100% repeat-x;
+    .footer-layout_left {
+        width: 40%;
+        padding-left: 96px;
+    }
+    .footer-layout_center {
+        width: 25%;
+    }
+    .footer-layout_right {
+    }
+}
+.footer-LogoBox {
+    margin-top: 8px;
+}
+.footer-snsList {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    .footer-snsList_icon {
+        display: inline-block;
+        width: 30px;
+        transition: var(--transition);
+        img{
+            width: 100%;
+        }
+        &:hover {
+            opacity: .6;
+        }
+    }
+    .footer-snsList_icon--X {
+        width: 28px;
+    }
+}
+.footer-textBox {
+    .footer-textBox_title {
+        color: var(--color-primary);
+        font-size: var(--font-md);
+        font-weight: bold;
+    }
+    .footer-textBox_textList {
+        margin-top: 16px;
+        li + li {
+            margin-top: 5px;
+        }
+        a{
+            position: relative;
+            &::after {
+                content: '';
+                left: 0;
+                right: auto;
+                width: 0px;
+                bottom: -2px;
+                display: block;
+                height: 1px;
+                position: absolute;
+                transition: var(--transition);
+                background-color: var(--color-primary);
+            }
+        }
+        a:hover::after {
+            width: 100%;
+        }
+        .footer-textBox_textList_table span {
+            display: inline-block;
+            width: 60px;
+        }
+    }
+}
+.footer-copy {display: block;
+    text-align: center;
+    background-color: #C6E0F5;
+    font-size: var(--font-sm);
+    padding-bottom: 0.2svw;
+}
+
+/* FooterLogo */
+.footerLogo {
+}
+.footerLogo-main {
+    font-size: 38px;
+    color: var(--color-primary);
+    line-height: 1.2;
+    font-family: var(--font-family-title);
+}
+.footerLogo-sub {
+    font-size: var(--font-md);
+    margin-top: 4px;
+    font-weight: bold;
+}

@@ -1,3 +1,4 @@
+import "./Section.css";
 import type { ReactNode } from "react";
 type SectionProps = {
   children: ReactNode;

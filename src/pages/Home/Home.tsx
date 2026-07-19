@@ -11,11 +11,13 @@ function Home() {
     <>
     <main>
         <Hero />
-        <Attraction />
-        <Event />
-        <Ticket />
-        <Access />
-        <Schedule />
+        <div className="home-contentBg">
+          <Attraction />
+          <Event />
+          <Ticket />
+          <Access />
+          <Schedule />
+        </div>
     </main>
     </>
   );

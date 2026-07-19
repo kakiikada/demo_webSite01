@@ -1,0 +1,33 @@
+.ticket {
+    background-color: #FEFBFA;
+    padding: 30px;
+    width: 500px;
+    margin: 0 auto;
+    box-shadow: var(--shadow);
+    border-radius: var(--radius-lg);
+}
+.ticket-titleBox {
+    text-align: center;
+}
+.ticket-value {
+    .ticket-value_titleBox {
+        text-align: center;
+    }
+    .ticket-value_list {
+        margin-top: -24px;
+        padding-top: 40px;
+        box-shadow: var(--shadow);
+        border-radius: var(--radius-lg);
+        li {
+            padding: 12px 24px;
+        }
+    }
+}
+.ticket-subValue {
+    .ticket-subValue_left {}
+    .ticket-subValue_right {}
+}
+.ticket-pickup {
+    .ticket-pickup_title {}
+    .ticket-pickup_text {}
+}

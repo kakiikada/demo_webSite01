@@ -1,12 +1,18 @@
+import "./SubTitle.css";
 type SubTitleProps = {
   text: string;
+  color?: "default" | "blue";
 };
 
-function SubTitle({ text }: SubTitleProps) {
+function SubTitle({ color = "default", text}: SubTitleProps) {
   return (
-    <span>
-       {text}
+    <span className={`subTitle subTitle--${color}`}>
+      <span className="subTitle_text">
+        {text}
+      </span>
     </span>
   );
 }
 export default SubTitle;
+
+

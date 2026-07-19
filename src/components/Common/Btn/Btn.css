@@ -1,0 +1,30 @@
+.btn {
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--radius-md);
+    background-color: var(--color-accent);
+    border: 1px solid var(--color-accent);
+    transition: var(--transition);
+    &:hover {
+        color: var(--color-accent);
+        background-color: var(--color-bg);
+    }
+}
+.btn--large {
+    font-size: var(--font-md);
+    height: 40px;
+    border-radius:20px;
+
+}
+.btn--Hero {
+    width: 280px;
+    padding: 15px;
+    font-size: 20px;
+    line-height: 1.5;
+    border-radius: 30px;
+}

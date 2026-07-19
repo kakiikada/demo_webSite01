@@ -6,10 +6,12 @@ type AttractionCardProps = {
 
 function AttractionCard({ img, title, text }: AttractionCardProps) {
   return (
-    <div>
+    <div className="attractionCard">
         <img src={img} alt={title} />
-        <h3>{title}</h3>
-        <p>{text}</p>
+        <div className="attractionCard_inner">
+          <h3 className="attractionCard-title">{title}</h3>
+          <p className="attractionCard-text">{text}</p>
+        </div>
     </div>
   );
 }

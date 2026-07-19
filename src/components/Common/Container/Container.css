@@ -1,0 +1,9 @@
+.container {
+    margin: 0 auto;
+    padding: 50px 70px;
+    max-width: var(--content-width);
+}
+
+.container--inner0 {
+    padding: 0;
+}

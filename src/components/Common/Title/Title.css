@@ -1,0 +1,43 @@
+.title {
+    display: block;
+    text-align: center;
+    margin-bottom: 36px;
+    .title_text {
+        font-size: 30px;
+        font-weight: bold;
+        position: relative;
+        display: inline-block;
+        &.title_text--default {
+            color: var(--color-primary);
+        }
+        &.title_text--red {
+            color: var(--color-accent);
+        }
+        &.title_text--blue {
+            color: #4B8EDF;
+        }
+        &::before, &::after {
+            content: '';
+            top: 12px;
+            height: 30px;
+            width: 30px;
+            position: absolute;
+            display: inline-block;
+            background-image: url(../../../public/images/icon/bg-star.svg), url(../../../public/images/icon/bg-star-color2.svg);
+            background-repeat: no-repeat;
+            background-size: 20px,10px;
+        }
+        &::before {
+            left: -30px;
+            background-position: left top,right 3px bottom 2px;
+        }
+        &::after {
+            right: -35px;
+            background-position: right top,left 3px bottom 2px;
+        }
+    }
+    .title_subText{
+        display: block;
+        margin-top: 14px;
+    }
+}
