@@ -2,14 +2,26 @@
     scroll-margin-top: var(--scroll-margin-top);
 }
 .event-cardList {
-    gap: 20px;
+    gap: 32px 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    li {
+        width: calc(25% - 15px);
+        @media screen and (max-width: 959px) {
+            width: calc(50% - 20px);
+        }
+        @media screen and (max-width: 767px) {
+            width: 100%; 
+        }
+    }
 }
 
 .eventCard {
-    overflow: hidden;
+    height: 100%;
+    background-color: #fff;
     position: relative;
+    overflow: hidden;
     box-shadow: var(--shadow);
     border-radius: var(--radius-lg);
     img{
@@ -18,8 +30,7 @@
         object-fit: cover;
     }
     .eventCard_inner {
-        padding: 22px 16px;
-        background-color: #fff;
+        padding: 20px 16px 22px;
     }
     .eventCard_status {
         top: 0;
@@ -39,8 +50,10 @@
     }
 }
 .eventCard_item {
+    display: inline-block;
     line-height: 1;
     font-weight: bold;
+    margin-top: 2px;
     border-radius: 12px;
     padding: 1px 12px 2px;
     background-color: #fff;

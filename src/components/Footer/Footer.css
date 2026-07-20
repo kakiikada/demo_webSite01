@@ -9,12 +9,23 @@
     margin: 0 auto;
     padding: 24px var( --inner-md) 82px;
     background: url(../../../public/images/bg-line.svg) bottom -1.6svw left 0/100% repeat-x;
+    @media screen and (max-width: 959px) {
+        display: block;
+        text-align: center;
+    }
     .footer-layout_left {
         width: 40%;
         padding-left: 96px;
+        @media screen and (max-width: 959px) {
+            width: 100%;
+            padding-left: 0;
+        }
     }
     .footer-layout_center {
         width: 25%;
+        @media screen and (max-width: 959px) {
+            width: 100%;
+        }
     }
     .footer-layout_right {
     }
@@ -27,6 +38,9 @@
     display: flex;
     align-items: center;
     gap: 15px;
+    @media screen and (max-width: 959px) {
+        justify-content: center;
+    }
     .footer-snsList_icon {
         display: inline-block;
         width: 30px;
@@ -47,11 +61,20 @@
         color: var(--color-primary);
         font-size: var(--font-md);
         font-weight: bold;
+        @media screen and (max-width: 959px) {
+            margin-top: 32px;
+        }
     }
     .footer-textBox_textList {
         margin-top: 16px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        @media screen and (max-width: 959px) {
+            display: inline-block;
+        }
         li + li {
-            margin-top: 5px;
+            margin-top: 8px;
         }
         a{
             position: relative;
@@ -74,6 +97,10 @@
         .footer-textBox_textList_table span {
             display: inline-block;
             width: 60px;
+            @media screen and (max-width: 959px) {
+                width: auto;
+                margin-right: 16px;
+            }
         }
     }
 }
@@ -94,7 +121,7 @@
     font-family: var(--font-family-title);
 }
 .footerLogo-sub {
-    font-size: var(--font-md);
+    font-size: var(--font-sm);
     margin-top: 4px;
     font-weight: bold;
 }

@@ -2,12 +2,24 @@
     scroll-margin-top: var(--scroll-margin-top);
 }
 .attraction-cardList {
-    gap: 50px;
+    gap: 32px 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    li {
+        width: calc(25% - 15px);
+        @media screen and (max-width: 959px) {
+            width: calc(50% - 20px);
+        }
+        @media screen and (max-width: 767px) {
+            width: 100%; 
+        }
+    }
 }
 
 .attractionCard {
+    height: 100%;
+    background-color: #fff;
     overflow: hidden;
     box-shadow: var(--shadow);
     border-radius: var(--radius-lg);
@@ -19,7 +31,6 @@
     .attractionCard_inner {
         padding: 16px;
         text-align: center;
-        background-color: #fff;
     }
 }
 .attractionCard-title {

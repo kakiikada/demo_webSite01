@@ -2,6 +2,13 @@
     margin: 0 auto;
     padding: 50px 70px;
     max-width: var(--content-width);
+
+    @media screen and (max-width: 959px) {
+        padding: 50px 50px;
+    }
+    @media screen and (max-width: 767px) {
+        padding: 50px 16px;
+    }
 }
 
 .container--inner0 {

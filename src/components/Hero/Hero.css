@@ -2,22 +2,25 @@
     width: 100%;
     aspect-ratio: 14 / 7;
     .Hero_textLayout {
-        margin-top: 130px;
-        margin-left: 230px;
+        margin-top: 13svw;
+        margin-left: 16svw;
         display: inline-block;
         text-align: center;
-
+        @media screen and (max-width: 767px) {
+            margin: 120px auto;
+            width: 100%;
+        }
     }
 }
 .Hero-catch {
+    font-size: clamp(28px, 1.292rem + 2.04vw, 50px);
     color: #fff;
-    font-size: 50px;
 }
 .Hero-text {
+    font-size: clamp(15px, 0.792rem + 0.65vw, 22px);
+    color: #fff;
     margin-top: 10px;
     display: block;
-    color: #fff;
-    font-size: 22px;
 }
 .Hero-btnBox {
     margin-top: 28px;
@@ -28,7 +31,11 @@
     z-index: -1;
     position: fixed;
     background-image: url(../../../public/images/hero-bg.jpg);
-    background-position: top left;
+    background-position: top right;
     background-repeat: no-repeat;
     background-size: 100% auto;
+    @media screen and (max-width: 767px) {
+    background-position: top center;
+    background-size: cover;
+    }
 }

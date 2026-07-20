@@ -16,7 +16,6 @@
     }
 }
 .btn--large {
-    font-size: var(--font-md);
     height: 40px;
     max-width: 500px;
     border-radius:20px;
@@ -24,8 +23,8 @@
 }
 .btn--Hero {
     width: 280px;
-    padding: 15px;
-    font-size: 20px;
+    padding: clamp(8px, 0.354rem + 0.65vw, 15px);
+    font-size: clamp(14px, 0.75rem + 0.56vw, 20px);
     line-height: 1.5;
     border-radius: 30px;
 }

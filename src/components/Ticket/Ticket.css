@@ -30,7 +30,7 @@
     justify-content: center;
     gap: 32px;
     .ticket-layout_block {
-        min-width: 400px;
+        min-width: 380px;
         width: calc(50% - 16px);
         margin-top: -20px;
         & + & {

@@ -1,30 +1,29 @@
 
+import { useState } from "react";
 import "./Header.css";
 import HeaderLogo from "./HeaderLogo";
-import Btn from "../Common/Btn/Btn";
+import HamburgerButton from "./HamburgerButton";
+import Navigation from "./Navigation";
+
 export default function Header() {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <header className="header">
       <div className="header-layout">
         <div className="header-layout_left">
-          <HeaderLogo />
+          <HeaderLogo
+          />
         </div>
         <div className="header-layout_right">
-          <nav className="header-nav">
-            <ul>
-              {/* <li>Home</li> */}
-              <li><a href="#attraction">アトラクション</a></li>
-              <li><a href="#event">イベント</a></li>
-              <li><a href="#ticket">チケット</a></li>
-              <li><a href="#access">アクセス</a></li>
-              <li><a href="#schedule">営業時間</a></li>
-            </ul>
-          </nav>
-          <div><Btn text="チケットを購入" url="#" size="large" /></div>
+          <Navigation
+            isOpen={isOpen}
+            onClose={() => setIsOpen(false)}/>
         </div>
         <div className="header-icon">
-          <span></span>
-          <span></span>
+          <HamburgerButton
+            isOpen={isOpen}
+            onClick={() => setIsOpen(!isOpen)}
+          />
         </div>
       </div>
     </header>
