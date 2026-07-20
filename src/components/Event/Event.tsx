@@ -9,7 +9,7 @@ export default function Event() {
     <>
       <Section >
         <Container>
-          <div className="event">
+          <div className="event" id="event">
             <h2><Title text="イベント情報" /></h2>
             <ul className="event-cardList">
                 <li>

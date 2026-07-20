@@ -1,33 +1,158 @@
 .ticket {
-    background-color: #FEFBFA;
+    position: relative;
     padding: 30px;
-    width: 500px;
     margin: 0 auto;
     box-shadow: var(--shadow);
-    border-radius: var(--radius-lg);
+    background-color: #FEFBFA;
+    border: 1px solid var(--color-accent);
+    border-radius: 45% 45% 26px 26px / 120px 120px 26px 26px;
+    scroll-margin-top: var(--scroll-margin-top);
+    &:before {
+        content: '';    
+        top: 60px;
+        left: 9%;
+        height: 60px;
+        width: 60px;
+        transform: rotate(-15deg);
+        position: absolute;
+        display: inline-block;
+        background-image: url(../../../public/images/icon/icon-ticket.svg);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
 }
 .ticket-titleBox {
     text-align: center;
+}
+.ticket-layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    .ticket-layout_block {
+        min-width: 400px;
+        width: calc(50% - 16px);
+        margin-top: -20px;
+        & + & {
+            margin-top: 0px;
+        }
+    }
 }
 .ticket-value {
     .ticket-value_titleBox {
         text-align: center;
     }
     .ticket-value_list {
-        margin-top: -24px;
-        padding-top: 40px;
+        margin-top: -10px;
+        padding-top: 24px;
         box-shadow: var(--shadow);
+        border: 2px solid var(--color-accent);
         border-radius: var(--radius-lg);
-        li {
-            padding: 12px 24px;
+        .ticket-value_list_line {
+            display: flex;
+            height: 50px;
+            padding: 3px 42px 7px 24px;
+            justify-content: space-between;
+            align-items: center;
+            & + & {
+                border-top: 1px dotted var(--color-accent);
+            }
         }
+    }
+    .ticket-valueName {
+        font-size: 16px;
+        span {
+            font-size: 13px;
+            margin-left: 8px;
+            display: inline-block;
+        }
+    }
+    .ticket-valueText {
+        font-size: 24px;
+        font-weight: bold;
+        color: var(--color-accent);
     }
 }
 .ticket-subValue {
-    .ticket-subValue_left {}
-    .ticket-subValue_right {}
+    position: relative;
+    max-width: 100%;
+    padding: 16px;
+    margin: 0 auto;
+    background-color: #FEF3F5;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--color-accent);
+    border-radius: 12px;
+    .ticket-subValue_left {
+        position: relative;
+        width: 72%;
+        padding: 0px 23px 0px 50px;
+        border-right: 1px dotted var(--color-accent);
+        &::before {
+            content: 'お得！';
+            top: -26px;
+            left: -28px;
+            height: 60px;
+            width: 60px;
+            display: flex;
+            position: absolute;
+            font-size: 14px;
+            color: #fff;
+            font-weight: bold;
+            padding-left: 6px;
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            background-image: url(../../../public/images/icon/bg-label.svg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            transform: rotate(-10deg);
+        }
+    }
+    .ticket-subValueTitle {
+        color: var(--color-accent);
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .ticket-subValueText {
+        margin-top: 8px;
+    }
+    .ticket-subValue_right {
+        text-align: right;
+        padding-right: 10px;
+    }
+    .ticket-subValueVal {
+        color: var(--color-accent);
+        font-weight: bold;
+        span {
+            font-size: 22px;
+        }
+    }
 }
 .ticket-pickup {
-    .ticket-pickup_title {}
-    .ticket-pickup_text {}
+    position: relative;
+    max-width: 100%;
+    padding: 8px 0 8px 100px ;
+    margin: 0 auto;
+    margin-top: 12px;
+    box-shadow: var(--shadow);
+    border: 1px solid #244BA0;
+    border-radius: 12px;
+    background-color: var(--color-basic);
+    background-image: url(../../../public/images/icon/bg-balloon.svg),url(../../../public/images/icon/bg-tent.svg);
+    background-repeat: no-repeat;
+    background-size: 36px, 68px;
+    background-position: right 8px bottom 4px, left 12px top 8px;
+    .ticket-pickup_title {
+        color: var(--color-primary);
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .ticket-pickup_text {
+        margin-top: 8px;
+    }
+}
+.ticket-btn {
+    margin-top: 24px;
 }

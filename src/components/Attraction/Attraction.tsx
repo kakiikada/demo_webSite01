@@ -9,7 +9,7 @@ export default function Attraction() {
     <>
       <Section>
         <Container>
-          <div className="attraction">
+          <div className="attraction" id="attraction">
             <h2>
                 <Title text="おすすめアトラクション" />
             </h2>

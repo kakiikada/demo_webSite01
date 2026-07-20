@@ -1,0 +1,112 @@
+.schedule {
+    position: relative;
+    padding: 30px;
+    margin: 0 auto;
+    box-shadow: var(--shadow);
+    background-color: #FEFBFA;
+    border: 1px solid var(--color-accent);
+    border-radius: 45% 45% 26px 26px / 120px 120px 26px 26px;
+    scroll-margin-top: var(--scroll-margin-top);
+    &:before {
+        content: '';    
+        top: 60px;
+        left: 9%;
+        height: 60px;
+        width: 60px;
+        transform: rotate(-15deg);
+        position: absolute;
+        display: inline-block;
+        background-image: url(../../../public/images/icon/icon-time.svg);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
+}
+.schedule-titleBox {
+    text-align: center;
+}
+.schedule-layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    .schedule-layout_block {
+        min-width: 400px;
+        width: calc(50% - 16px);
+        margin-top: -20px;
+        & + & {
+            margin-top: 0px;
+        }
+    }
+}
+.schedule-time {
+    .schedule-time_titleBox {
+        text-align: center;
+    }
+    .schedule-time_main {
+        text-align: center;
+        overflow: hidden;
+        margin: 0 auto;
+        padding: 16px;
+        background: var(--color-bg);
+        border-radius: 12px;
+        border: 1px solid var(--color-accent);
+
+        .schedule-time_main_title {
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .schedule-time_main_text {
+
+        }
+    }
+}
+.schedule-addData {
+    position: relative;
+    max-width: 100%;
+    padding: 8px 0 8px 100px ;
+    margin: 12px auto 0;
+    box-shadow: var(--shadow);
+    border-radius: 12px;
+    .schedule-addData_title {
+        color: var(--color-primary);
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .schedule-addData_text {
+        margin-top: 4px;
+    }
+    /* バリエーション */
+    &.schedule-addData--basic {
+        border: 1px solid var(--color-primary);
+        background-color: var(--color-basic);
+        background-image: url(../../../public/images/icon/bg-balloon.svg),url(../../../public/images/icon/bg-tent.svg);
+        background-repeat: no-repeat;
+        background-size: 36px, 68px;
+        background-position: right 8px bottom 4px, left 12px top 8px;
+        .schedule-addData_title {
+            color: var(--color-primary);
+        }
+    }
+    &.schedule-addData--parade {
+        border: 1px solid #f89b4a;
+        background-color: #fefaec;
+        background-image: url(../../../public/images/icon/bg-star-color3.svg),url(../../../public/images/icon/bg-castle.svg);
+        background-repeat: no-repeat;
+        background-size: 24px, 68px;
+        background-position: right 16px bottom 12px, left 12px bottom 16px;
+        .schedule-addData_title {
+            color: #f89b4a;
+        }
+    }
+    &.schedule-addData--note {
+        padding: 8px 16px 8px 32px;
+        border: 1px solid var(--color-accent);
+        background-color: #fef3f4;
+        .schedule-addData_title {
+            color: var(--color-accent);
+            &::first-letter {
+                margin-left: -1em;
+            }
+        }
+    }
+}

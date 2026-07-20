@@ -43,6 +43,8 @@
 
   /* Animation */
   --transition: 0.2s ease;
+
+  --scroll-margin-top: 100px;
 }
 #root {
   width: 100%;
@@ -56,12 +58,12 @@ body {
   font-family: var(--font-family-main);
   font-size: var(--font-sm);
   color: var(--color-text);
-  background: var(--color-bg);
+  background: #352053;
   line-height: 1.6;
   overflow-x: hidden;
 }
 .home-contentBg {
-  margin-top: 33vw;
+  /* margin-top: 33vw; */
   position: relative;
   background-color: var(--color-basic);
   &::before,
@@ -88,5 +90,12 @@ body {
     width: 20svw;
     left: auto;
     right: 32svw;
+  }
+}
+.home-contentFlex {
+  display: flex;
+  flex-wrap: wrap;
+  .home-contentFlex_item {
+    
   }
 }

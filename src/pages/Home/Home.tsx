@@ -14,10 +14,10 @@ function Home() {
         <div className="home-contentBg">
           <Attraction />
           <Event />
-          <Ticket />
-          <Access />
-          <Schedule />
         </div>
+        <Ticket />
+        <Access />
+        <Schedule />
     </main>
     </>
   );

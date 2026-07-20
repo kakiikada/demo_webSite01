@@ -1,3 +1,6 @@
+.attraction {
+    scroll-margin-top: var(--scroll-margin-top);
+}
 .attraction-cardList {
     gap: 50px;
     display: flex;
@@ -16,6 +19,7 @@
     .attractionCard_inner {
         padding: 16px;
         text-align: center;
+        background-color: #fff;
     }
 }
 .attractionCard-title {

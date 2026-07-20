@@ -28,7 +28,7 @@
             background-size: 20px,10px;
         }
         &::before {
-            left: -30px;
+            left: -35px;
             background-position: left top,right 3px bottom 2px;
         }
         &::after {

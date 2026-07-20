@@ -1,0 +1,91 @@
+.access {
+    position: relative;
+    padding: 30px;
+    margin: 0 auto;
+    box-shadow: var(--shadow);
+    background-color: var(--color-basic);
+    border: 1px solid var(--color-primary);
+    border-radius: 45% 45% 26px 26px / 120px 120px 26px 26px;
+    scroll-margin-top: var(--scroll-margin-top);
+    &:before {
+        content: '';    
+        top: 60px;
+        left: 9%;
+        height: 60px;
+        width: 60px;
+        transform: rotate(-15deg);
+        position: absolute;
+        display: inline-block;
+        background-image: url(../../../public/images/icon/icon-marker.svg);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
+}
+.access-titleBox {
+    text-align: center;
+}
+.access-layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    .access-layout_block {
+        min-width: 400px;
+        width: calc(50% - 16px);
+        margin-top: -20px;
+        & + & {
+            margin-top: 0px;
+        }
+    }
+}
+.access-map {
+    .access-map_titleBox {
+        text-align: center;
+    }
+    .access-map_main {
+        border: 1px solid #D0E7F4;
+        border-radius: 12px;
+        overflow: hidden;
+        iframe {
+            width: 100%;
+            aspect-ratio: 2 / 1;
+        }
+    }
+}
+.access-list {
+    width: 100%;
+    .access-list_line {
+        position: relative;
+        padding-left: 32px;
+        margin-top: 12px;
+
+    }
+    .access-list_line_iconMarker,
+    .access-list_line_iconCar,
+    .access-list_line_iconTrain {
+        content: 'a';
+        position: absolute;
+        display: inline-block;
+        left: 8px;
+        top: 3px;
+        width: 20px;
+        height: 20px;
+        background-size: 100% auto;
+
+    }
+    .access-list_line_iconMarker {
+        background-image: url(../../../public/images/icon/icon-marker.svg);
+    }
+    .access-list_line_iconCar {
+        background-image: url(../../../public/images/icon/icon-car.svg);
+    }
+    .access-list_line_iconTrain {
+        background-image: url(../../../public/images/icon/icon-train.svg);
+    }
+    .access-list_line_title {
+        font-size: 15px;
+        font-weight: bold;
+        color: #4B8EDF;
+    }
+
+}

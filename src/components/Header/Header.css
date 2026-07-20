@@ -10,7 +10,10 @@
         inset: 0;
         z-index: -1;
         position: absolute;
-        background: url(/public/images/hero-bg.jpg) center top/100% ;
+        background-image: url(/public/images/hero-bg.jpg);
+        background-position: top left;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
         opacity: 0.8;
     }
 }

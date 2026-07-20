@@ -15,6 +15,7 @@ export default function Event() {
               <div className="Hero-btnBox"><Btn url="#" size="Hero" text="チケットを購入する"/></div>
             </div>
           </div>
+          <div className="HeroBg"></div>
         </Container>
       </Section>
     </>

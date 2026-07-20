@@ -13,11 +13,11 @@ export default function Header() {
           <nav className="header-nav">
             <ul>
               {/* <li>Home</li> */}
-              <li><a href="">アトラクション</a></li>
-              <li><a href="">イベント</a></li>
-              <li><a href="">チケット</a></li>
-              <li><a href="">アクセス</a></li>
-              <li><a href="">営業時間</a></li>
+              <li><a href="#attraction">アトラクション</a></li>
+              <li><a href="#event">イベント</a></li>
+              <li><a href="#ticket">チケット</a></li>
+              <li><a href="#access">アクセス</a></li>
+              <li><a href="#schedule">営業時間</a></li>
             </ul>
           </nav>
           <div><Btn text="チケットを購入" url="#" size="large" /></div>
