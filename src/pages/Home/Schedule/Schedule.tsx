@@ -1,8 +1,8 @@
 import "./Schedule.css";
-import Section from "../Common/Section/Section";
-import Container from "../Common/Container/Container";
-import Title from "../Common/Title/Title";
-import SubTitle from "../Common/SubTitle/SubTitle";
+import Section from "../../../components/Common/Section/Section";
+import Container from "../../../components/Common/Container/Container";
+import Title from "../../../components/Common/Title/Title";
+import SubTitle from "../../../components/Common/SubTitle/SubTitle";
 
 export default function Schedule() {
   return (

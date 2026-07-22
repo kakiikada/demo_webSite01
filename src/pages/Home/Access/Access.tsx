@@ -1,9 +1,9 @@
 import "./Access.css";
-import Section from "../Common/Section/Section";
-import Container from "../Common/Container/Container";
-import Title from "../Common/Title/Title";
-import SubTitle from "../Common/SubTitle/SubTitle";
-import Btn from "../Common/Btn/Btn";
+import Section from "../../../components/Common/Section/Section";
+import Container from "../../../components/Common/Container/Container";
+import Title from "../../../components/Common/Title/Title";
+import SubTitle from "../../../components/Common/SubTitle/SubTitle";
+import Btn from "../../../components/Common/Btn/Btn";
 
 export default function Access() {
   return (

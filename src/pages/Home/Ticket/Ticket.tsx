@@ -1,9 +1,9 @@
 import "./Ticket.css";
-import Section from "../Common/Section/Section";
-import Container from "../Common/Container/Container";
-import Title from "../Common/Title/Title";
-import SubTitle from "../Common/SubTitle/SubTitle";
-import Btn from "../Common/Btn/Btn";
+import Section from "../../../components/Common/Section/Section";
+import Container from "../../../components/Common/Container/Container";
+import Title from "../../../components/Common/Title/Title";
+import SubTitle from "../../../components/Common/SubTitle/SubTitle";
+import Btn from "../../../components/Common/Btn/Btn";
 
 export default function Ticet() {
   return (
@@ -22,19 +22,19 @@ export default function Ticet() {
                             </div>
                             <ul className="ticket-value_list">
                                 <li className="ticket-value_list_line">
-                                    <p className="ticket-valueName">大人<span>（ 18歳以上</span> ）</p>
+                                    <p className="ticket-valueName">大人<span>（ 18歳以上 ）</span></p>
                                     <p className="ticket-valueText">&#165;4,800</p>
                                 </li>
                                 <li className="ticket-value_list_line">
-                                    <p className="ticket-valueName">中人<span>（ 中学生 12～17歳</span> ）</p>
+                                    <p className="ticket-valueName">中人<span>（ 中学生 12～17歳）</span></p>
                                     <p className="ticket-valueText">&#165;3,800</p>
                                 </li>
                                 <li className="ticket-value_list_line">
-                                    <p className="ticket-valueName">小人<span>（ 3歳～小学生</span> ）</p>
+                                    <p className="ticket-valueName">小人<span>（ 3歳～小学生）</span></p>
                                     <p className="ticket-valueText">&#165;2,800</p>
                                 </li>
                                 <li className="ticket-value_list_line">
-                                    <p className="ticket-valueName">シニア<span>（ 65歳以上</span> ）</p>
+                                    <p className="ticket-valueName">シニア<span>（ 65歳以上）</span></p>
                                     <p className="ticket-valueText">&#165;3,800</p>
                                 </li>
                             </ul>
@@ -57,7 +57,7 @@ export default function Ticet() {
                     </div>
                 </div>
                 <div className="ticket-btn">
-                    <Btn text="チケットを購入" url="#" size="large" />
+                    <Btn text="チケットを購入" url="/TicketForm" size="large" />
                 </div>
             </div>
         </Container>

@@ -324,7 +324,7 @@ textarea {
  */
 
 [type="search"] {
-  outline-offset: -2px; /* 1 */
+  outline-offset: -0.125rem; /* 1 */
 }
 
 /**

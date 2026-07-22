@@ -1,11 +1,13 @@
 .title {
     display: block;
     text-align: center;
-    margin-bottom: 36px;
+    margin-bottom: 2.25rem;
     position: relative;
+    text-shadow: 0 0 4px  var(--color-bg);
     z-index: 1;
     .title_text {
-        font-size: 30px;
+        font-size: 1.875rem;
+        font-size: clamp(1.25rem, 1.071rem + 0.89vw, 1.875rem);
         font-weight: bold;
         position: relative;
         display: inline-block;
@@ -20,26 +22,26 @@
         }
         &::before, &::after {
             content: '';
-            top: 12px;
-            height: 30px;
-            width: 30px;
+            top: 0.750rem;
+            height: 1.875rem;
+            width: 1.875rem;
             position: absolute;
             display: inline-block;
             background-image: url(../../../public/images/icon/bg-star.svg), url(../../../public/images/icon/bg-star-color2.svg);
             background-repeat: no-repeat;
-            background-size: 20px,10px;
+            background-size: 1.25rem, 0.625rem ;
         }
         &::before {
-            left: -35px;
-            background-position: left top,right 3px bottom 2px;
+            left: -2.1875rem;
+            background-position: left top,right 0.1875rem bottom 0.125rem;
         }
         &::after {
-            right: -35px;
-            background-position: right top,left 3px bottom 2px;
+            right: -2.1875rem;
+            background-position: right top,left 0.1875rem bottom 0.125rem;
         }
     }
     .title_subText{
         display: block;
-        margin-top: 14px;
+        margin-top: 0.875rem;
     }
 }

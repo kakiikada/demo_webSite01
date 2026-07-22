@@ -20,8 +20,8 @@ export default function Navigation({
           <li><a href="#access">アクセス</a></li>
           <li><a href="#schedule">営業時間</a></li>
         </ul>
+        <div className="header-nav_btn"><Btn text="チケットを購入" url="/TicketForm" size="large" /></div>
       </nav>
-      <div className="header-nav_btn"><Btn text="チケットを購入" url="#" size="large" /></div>
     </div>
   )
 }

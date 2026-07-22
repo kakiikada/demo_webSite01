@@ -11,19 +11,17 @@
         z-index: -1;
         position: absolute;
         background-image: url(/public/images/hero-bg.jpg);
-        background-position: top left;
+        background-position: top right;
         background-repeat: no-repeat;
         background-size: 100% auto;
         opacity: 0.8;
         @media screen and (max-width: 767px) {
-            background-image: none;
-            background-color: var(--color-primary);
-            opacity: 0.6;
+            background-size: 160% auto;
         }
     }
 }
 .header-layout {
-    height: 100px;
+    height: 6.25rem;
     width: 100%;
     max-width: var(--content-width);
     margin: 0 auto;
@@ -31,7 +29,7 @@
     display: flex;
     justify-content: space-between;
     @media screen and (max-width: 959px) {
-        height: 80px;
+        height:  5rem;
     }
     .header-layout_left {
         @media screen and (max-width: 959px) {
@@ -65,19 +63,21 @@
     }
     .header-nav_menu {
         display: flex;
-        padding: 0 38px;
+        align-items: center;
+        padding: 0 2.375rem;
         font-size: var(--font-sm);
         font-weight: bold;
         color: #fff;
         @media screen and (max-width: 959px) {
             display: block;
+            height: 100vh;
         }
         ul {
             display: flex;
             flex-wrap: wrap;
-            gap: 24px;
+            gap: 1.5rem;
             @media screen and (max-width: 959px) {
-                padding-top: 120px;
+                padding-top: 7.5rem;
                 
             }
             li {
@@ -95,9 +95,10 @@
     }
     .header-nav_btn {
         .btn {
-            width: 164px;
+            width: 10.25rem;
+            margin-left: 2rem;
             @media screen and (max-width: 959px) {
-                margin-top: 32px;
+                margin: 2rem auto 0;
             }
         }
     }
@@ -109,26 +110,26 @@
         display: block;
     }
     .hamburgerButton {
-        top: 16px;
-        right: 16px;
-        width: 30px;
+        top: 1rem;
+        right: 1rem;
+        width: 1.875rem;
         z-index: 10002;
         cursor: pointer;
         position: absolute;
         aspect-ratio: 1 / 1;
         .hamburgerButton_navIcon1, .hamburgerButton_navIcon2{
-            top: 13px;
-            height: 4px;
-            width: 30px;
+            top: 0.8125rem;
+            height: 0.25rem;
+            width: 1.875rem;
             transition: .3s;
-            border-radius: 2px;
+            border-radius: 0.125rem;
             position: absolute;
             background-color: #fff;
         }
         .hamburgerButton_navIcon1{
             transform: rotate(0deg);
             animation: menuIcon-out .3s ease-out forwards;
-            box-shadow: 0px 10px 0 #fff, 0px -10px 0 #fff;
+            box-shadow: 0 0.625rem 0 #fff, 0 -0.625rem 0 #fff;
 
         }
         &.js-active .hamburgerButton_navIcon1 {
@@ -145,29 +146,29 @@
 @keyframes menuIcon-in {
     0% {
         transform: rotate(0deg);
-        box-shadow: 0px 10px 0 #fff, 0px -10px 0 #fff;
+        box-shadow: 0 0.625rem 0 #fff, 0 -0.625rem 0 #fff;
     }
     50% {
         transform: rotate(0deg);
-        box-shadow: 0px 0px 0 #fff, 0px -0px 0 #fff;
+        box-shadow: 0 0 0 #fff, 0 0 0 #fff;
     }
     100% {
         transform: rotate(45deg);
-        box-shadow: 0px 0px 0 #fff, 0px -0px 0 #fff;
+        box-shadow: 0 0 0 #fff, 0 0 0 #fff;
     }
 }
 @keyframes menuIcon-out {
     0% {
         transform: rotate(45deg);
-        box-shadow: 0px 0px 0 #fff, 0px -0px 0 #fff;
+        box-shadow: 0 0 0 #fff, 0 0 0 #fff;
     }
     50% {
         transform: rotate(0deg);
-        box-shadow: 0px 0px 0 #fff, 0px -0px 0 #fff;
+        box-shadow: 0 0 0 #fff, 0 0 0 #fff;
     }
     100% {
         transform: rotate(0deg);
-        box-shadow: 0px 10px 0 #fff, 0px -10px 0 #fff;
+        box-shadow: 0 0.625rem 0 #fff, 0 -0.625rem 0 #fff;
     }
 }
 
@@ -176,7 +177,7 @@
     text-align: center;
     margin-left: 16vw;
     z-index: 10001;
-    padding: 8px;
+    padding: 0.5rem;
     @media screen and (max-width: 959px) {
         position: relative;
         display: flex;
@@ -187,13 +188,13 @@
 }
 .headerLogo-main {
     color: #fff;
-    font-size: clamp(28px, 1.542rem + 0.93vw, 38px);
+    font-size: clamp(1.75rem, 1.542rem + 0.93vw, 2.375rem);
     line-height: 1.2;
     font-family: var(--font-family-title);
 }
 .headerLogo-sub {
     color: #fff;
-    font-size: clamp(11px, 0.646rem + 0.19vw, 13px);
-    margin-top: 4px;
+    font-size: clamp(0.6875rem, 0.646rem + 0.19vw, 0.8125rem);
+    margin-top: 0.25rem;
 }
 

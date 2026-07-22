@@ -1,10 +1,10 @@
 
-import Hero from "../../components/Hero/Hero";
-import Attraction from "../../components/Attraction/Attraction";
-import Event from "../../components/Event/Event";
-import Ticket from "../../components/Ticket/Ticket";
-import Access from "../../components/Access/Access";
-import Schedule from "../../components/Schedule/Schedule";
+import Hero from "./Hero/Hero";
+import Attraction from "./Attraction/Attraction";
+import Event from "./Event/Event";
+import Ticket from "./Ticket/Ticket";
+import Access from "./Access/Access";
+import Schedule from "./Schedule/Schedule";
 
 function Home() {
   return (

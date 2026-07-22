@@ -1,24 +1,33 @@
 .access {
     position: relative;
-    padding: 30px;
+    padding: clamp(0.5rem, 0.107rem + 1.96vw, 1.875rem);
+    padding-bottom: 1rem;
     margin: 0 auto;
     box-shadow: var(--shadow);
     background-color: var(--color-basic);
     border: 1px solid var(--color-primary);
-    border-radius: 45% 45% 26px 26px / 120px 120px 26px 26px;
+    border-radius: 45% 45% 1.625rem 1.625rem / 7.5rem 7.5rem 1.625rem 1.625rem;
     scroll-margin-top: var(--scroll-margin-top);
+    @media screen and (max-width: 767px) {
+        border-radius: 3rem 3rem 0.5rem 0.5rem;
+    }
     &:before {
         content: '';    
-        top: 60px;
+        top: 3.75rem;
         left: 9%;
-        height: 60px;
-        width: 60px;
+        height: 3.75rem;
+        width: 3.75rem;
         transform: rotate(-15deg);
         position: absolute;
         display: inline-block;
         background-image: url(../../../public/images/icon/icon-marker.svg);
         background-repeat: no-repeat;
         background-size: 100% auto;
+        @media screen and (max-width: 767px) {
+            height: 3rem;
+            width: 3rem;
+            top: 3.25rem;
+        }
     }
 }
 .access-titleBox {
@@ -28,13 +37,17 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 32px;
+    gap: clamp(1rem, 0.714rem + 1.43vw, 2rem);
     .access-layout_block {
-        min-width: 380px;
-        width: calc(50% - 16px);
-        margin-top: -20px;
+        min-width: 23.75rem;
+        width: calc(50% - 1rem);
+        margin-top: -2.25rem;
+        @media screen and (max-width: 767px) {
+            min-width: auto;
+            width: 100%;   
+        }
         & + & {
-            margin-top: 0px;
+            margin-top: 0;
         }
     }
 }
@@ -44,7 +57,7 @@
     }
     .access-map_main {
         border: 1px solid #D0E7F4;
-        border-radius: 12px;
+        border-radius: 0.750rem;
         overflow: hidden;
         iframe {
             width: 100%;
@@ -56,8 +69,10 @@
     width: 100%;
     .access-list_line {
         position: relative;
-        padding-left: 32px;
-        margin-top: 12px;
+        padding-left: 2rem;
+        & + & {
+            margin-top: 0.750rem;
+        }
 
     }
     .access-list_line_iconMarker,
@@ -66,10 +81,10 @@
         content: 'a';
         position: absolute;
         display: inline-block;
-        left: 8px;
-        top: 3px;
-        width: 20px;
-        height: 20px;
+        left: 0.5rem;
+        top: 0.1875rem;
+        width: 1.25rem;
+        height: 1.25rem;
         background-size: 100% auto;
 
     }
@@ -83,7 +98,6 @@
         background-image: url(../../../public/images/icon/icon-train.svg);
     }
     .access-list_line_title {
-        font-size: 15px;
         font-weight: bold;
         color: #4B8EDF;
     }

@@ -1,0 +1,29 @@
+.ticketHero {
+    width: 100%;
+    aspect-ratio: 4 / 1;
+    @media screen and (max-width: 767px) {
+     aspect-ratio: 1 / 1;   
+    }
+    .ticketHero_textLayout {
+        padding-top: 9svw;
+        text-align: center;
+        @media screen and (max-width: 767px) {
+            margin: 7.5rem auto;
+            width: 100%;
+        }
+    }
+}
+
+.ticketHeroBg {
+    inset: 0;
+    width: 100%;
+    z-index: -1;
+    position: fixed;
+    background-image: url(../../../public/images/hero-bg.jpg);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    @media screen and (max-width: 767px) {
+        background-size: 160% auto;
+    }
+}

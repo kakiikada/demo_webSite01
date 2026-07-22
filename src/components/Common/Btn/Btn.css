@@ -16,15 +16,19 @@
     }
 }
 .btn--large {
-    height: 40px;
-    max-width: 500px;
-    border-radius:20px;
+    height: 2.5rem;
+    max-width:  31.25rem;
+    border-radius: 1.25rem;
+    @media screen and (max-width: 767px) {
+        height: 1.875rem;
+        border-radius: 1.25rem;
+    }
 
 }
-.btn--Hero {
-    width: 280px;
-    padding: clamp(8px, 0.354rem + 0.65vw, 15px);
-    font-size: clamp(14px, 0.75rem + 0.56vw, 20px);
+.btn--hero {
+    /* width:  17.5rem; */
+    padding: clamp(0.25rem, 0.036rem + 1.07vw, 1rem) 3rem;
+    font-size: clamp(0.875rem, 0.75rem + 0.56vw, 1.25rem);
     line-height: 1.5;
-    border-radius: 30px;
+    border-radius: 1.875rem;
 }

@@ -15,18 +15,17 @@
   --font-family-title: "Pacifico", sans-serif; 
 
   /* ベーシック */
-  --font-sm: 16px;
+  --font-sm: clamp(0.75rem, 0.679rem + 0.36vw, 1rem);
   /* 少し大きめ */
-  --font-md: clamp(18px, 1.083rem + 0.19vw, 20px);
+  --font-md: clamp(1.125rem, 1.083rem + 0.19vw, 1.25rem);
   /* かなり大きめ */
-  --font-lg: : clamp(20px, 20px, 20px);
 
   /* Layout */
   --content-width: 1440px;
 
 /* inner */
   /* --inner-sm: clamp(0.375rem, 0.2679rem + 0.5357vw, 0.75rem); */
-  --inner-md: clamp(0.75rem, 0.6071rem + 0.7143vw, 20px);
+  --inner-md: clamp(0.75rem, 0.6071rem + 0.7143vw, 1.25rem);
   /* --inner-lg: clamp(0.75rem, 0.5rem + 1.25vw, 1.625rem); */
 
   /* Radius */
@@ -34,12 +33,12 @@
   --radius-md: clamp(0.5rem, 0.3571rem + 0.7143vw, 1rem);
   --radius-lg: clamp(1.125rem, 1.0179rem + 0.5357vw, 1.5rem);
   /* Shadow */
-  --shadow: 0 4px 12px rgb(0 0 0 / 0.1);
+  --shadow: 0 0.25rem 0.750rem rgb(0 0 0 / 0.1);
 
   /* Animation */
   --transition: 0.2s ease;
 /* ページ内スクロールの位置 */
-  --scroll-margin-top: 100px;
+  --scroll-margin-top: 6.25rem;
 
   /* --media-sp: 767px;
   --media-tab: 959px; */
@@ -61,7 +60,6 @@ body {
   overflow-x: hidden;
 }
 .home-contentBg {
-  /* margin-top: 33vw; */
   position: relative;
   background-color: var(--color-basic);
   &::before,
@@ -75,7 +73,7 @@ body {
     background-position: center bottom;
     width: 40svw;
     z-index: 10;
-    top: -3.8svw;
+    top: -3.7svw;
     position: absolute;
     aspect-ratio: 10 / 1;
   }

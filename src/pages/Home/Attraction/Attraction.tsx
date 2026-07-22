@@ -1,8 +1,8 @@
 import "./Attraction.css";
-import Section from "../Common/Section/Section";
-import Container from "../Common/Container/Container";
+import Section from "../../../components/Common/Section/Section";
+import Container from "../../../components/Common/Container/Container";
 import AttractionCard from "./AttractionCard";
-import Title from "../Common/Title/Title";
+import Title from "../../../components/Common/Title/Title";
 
 export default function Attraction() {
   return (

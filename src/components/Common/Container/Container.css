@@ -1,13 +1,12 @@
 .container {
     margin: 0 auto;
-    padding: 50px 70px;
+    padding: 3.125rem 4.375rem;
     max-width: var(--content-width);
-
     @media screen and (max-width: 959px) {
-        padding: 50px 50px;
+        padding: 3.125rem 3.125rem;
     }
     @media screen and (max-width: 767px) {
-        padding: 50px 16px;
+        padding: 3.125rem 0.5rem;
     }
 }
 

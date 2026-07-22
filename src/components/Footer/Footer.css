@@ -7,15 +7,15 @@
     width: 100%;
     max-width: var(--content-width);
     margin: 0 auto;
-    padding: 24px var( --inner-md) 82px;
+    padding: 1.5rem var( --inner-md) 5.125rem;
     background: url(../../../public/images/bg-line.svg) bottom -1.6svw left 0/100% repeat-x;
     @media screen and (max-width: 959px) {
         display: block;
         text-align: center;
     }
     .footer-layout_left {
-        width: 40%;
-        padding-left: 96px;
+        width: 45%;
+        padding-left:  6rem;
         @media screen and (max-width: 959px) {
             width: 100%;
             padding-left: 0;
@@ -31,19 +31,19 @@
     }
 }
 .footer-LogoBox {
-    margin-top: 8px;
+    margin-top: 0.5rem;
 }
 .footer-snsList {
-    margin-top: 16px;
+    margin-top: 1rem;
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 0.9375rem;
     @media screen and (max-width: 959px) {
         justify-content: center;
     }
     .footer-snsList_icon {
         display: inline-block;
-        width: 30px;
+        width: 1.875rem;
         transition: var(--transition);
         img{
             width: 100%;
@@ -53,7 +53,7 @@
         }
     }
     .footer-snsList_icon--X {
-        width: 28px;
+        width: 1.75rem;
     }
 }
 .footer-textBox {
@@ -62,19 +62,22 @@
         font-size: var(--font-md);
         font-weight: bold;
         @media screen and (max-width: 959px) {
-            margin-top: 32px;
+            margin-top: 2rem;
         }
     }
     .footer-textBox_textList {
-        margin-top: 16px;
+        margin-top: 1rem;
         display: flex;
         flex-wrap: wrap;
-        gap: 5px;
+        gap: 0.25rem;
         @media screen and (max-width: 959px) {
             display: inline-block;
         }
-        li + li {
-            margin-top: 8px;
+        li {
+            width: 100%;
+            & + &{
+                margin-top: 0.5rem;
+            }
         }
         a{
             position: relative;
@@ -82,8 +85,8 @@
                 content: '';
                 left: 0;
                 right: auto;
-                width: 0px;
-                bottom: -2px;
+                width: 0;
+                bottom: -0.125rem;
                 display: block;
                 height: 1px;
                 position: absolute;
@@ -96,10 +99,10 @@
         }
         .footer-textBox_textList_table span {
             display: inline-block;
-            width: 60px;
+            width: 4.5rem;
             @media screen and (max-width: 959px) {
                 width: auto;
-                margin-right: 16px;
+                margin-right: 1rem;
             }
         }
     }
@@ -115,13 +118,13 @@
 .footerLogo {
 }
 .footerLogo-main {
-    font-size: 38px;
+    font-size: 2.375rem;
     color: var(--color-primary);
     line-height: 1.2;
     font-family: var(--font-family-title);
 }
 .footerLogo-sub {
     font-size: var(--font-sm);
-    margin-top: 4px;
+    margin-top: 0.25rem;
     font-weight: bold;
 }
