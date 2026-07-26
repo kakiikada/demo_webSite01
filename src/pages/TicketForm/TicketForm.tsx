@@ -6,6 +6,8 @@ import TicketCalendar from "./TicketCalendar/TicketCalendar"
 import TicketInfo from "./TicketInfo/TicketInfo"
 import TicketConfirm from "./TicketConfirm/TicketConfirm"
 import TicketComplete from "./TicketComplete/TicketComplete"
+import Section from "../../components/Common/Section/Section";
+import Container from "../../components/Common/Container/Container";
 import Btn from "../../components/Common/Btn/Btn";
 
 function TicketForm() {
@@ -13,34 +15,43 @@ function TicketForm() {
     <>
     <main>
       <TicketHero />
-      <div className="home-contentBg">
+      <div className="contentBg-wave">
         <form action="">
-          <div>
-            <div>
-              <TicketData />
-            </div>
-            <div>
+          <Section>
+            <Container>
               <TicketFlow />
               <div>
-                <TicketType />
-                <TicketCalendar />
+                {/* <div>
+                  <TicketData />
+                </div> */}
+                <div>
+                  <div className="contentFlex">
+                    <div className="contentFlex_half">
+                      <TicketType />
+                    </div>
+                    <div className="contentFlex_half">
+                      <TicketCalendar />
+                    </div>
+                  </div>
+
+                  <div>
+                    <TicketInfo />
+                  </div>
+                  <div>
+                    <TicketConfirm /> 
+                  </div>
+                  <div>
+                    <TicketComplete />
+                  </div>
+                  <div>
+                    <button onClick={formPrev}>内容を修正する</button>
+                    <button onClick={formNext}>次へ進む</button>
+                    <p>※こちらはデモサイトなので、実際の購入は行われません。</p>
+                  </div>
+                </div>
               </div>
-              <div>
-                <TicketInfo />
-              </div>
-              <div>
-                <TicketConfirm /> 
-              </div>
-              <div>
-                <TicketComplete />
-              </div>
-              <div>
-                <button onClick={formPrev}>内容を修正する</button>
-                <button onClick={formNext}>次へ進む</button>
-                <p>※こちらはデモサイトなので、実際の購入は行われません。</p>
-              </div>
-            </div>
-          </div>
+            </Container>
+          </Section>
         </form>
       </div>
       <div>

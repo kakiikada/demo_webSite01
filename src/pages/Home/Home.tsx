@@ -19,7 +19,7 @@ function Home() {
         <Ticket />
         <Access />
         <Schedule />
-        <div className="contentBg-secondary">
+        <div className="contentBg--secondary">
           <TicketInformation />
         </div>
     </main>

@@ -1,13 +1,13 @@
 :root {
   /* Color */
   /* ブランドカラー */
-  --color-primary: #244BA0;
-  --color-secondary: #FAF0CF;
-  --color-accent:#EB7297;
+  --color-primary: #244ba0;
+  --color-secondary: #faf0cf;
+  --color-accent:#eb7297;
   /* 基本 */
   --color-text: #333;
   --color-bg: #fff;
-  --color-basic: #F8FBFE;
+  --color-basic: #f8fBfe;
   --color-border: #ddd;
 
   /* Font */
@@ -35,6 +35,7 @@
   --radius-lg: clamp(1.125rem, 1.0179rem + 0.5357vw, 1.5rem);
   /* Shadow */
   --shadow: 0 0.25rem 0.750rem rgb(0 0 0 / 0.1);
+  --shadow-red: 0 0.25rem 0.750rem rgb(235 114 151 / 0.1);
 
   /* Animation */
   --transition: 0.2s ease;
@@ -88,13 +89,44 @@ body {
     left: auto;
     right: 32svw;
   }
-}.contentBg-secondary {
+}.contentBg--secondary {
   background-color: var(--color-secondary);
 }
-.home-contentFlex {
-  display: flex;
-  flex-wrap: wrap;
-  .home-contentFlex_item {
-    
-  }
+.frame--basic {
+    background-color: #fff;
+    box-shadow: var(--shadow);
+    border-radius: var(--radius-lg);
+}
+.frame--red {
+    background-color: #fff;
+    box-shadow: var(--shadow-red);
+    border-radius: var(--radius-lg);
+}
+.contentFlex {
+    display: flex;
+    justify-content: space-between;
+    .contentFlex_half {
+      width: calc(50% - 1rem);
+    }
+}
+/* form */
+:where(input),
+:where(select),
+:where(textarea) {
+  width: 100%;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 0.25rem 1rem;
+}
+/* Chrome, Edge, Safari */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  appearance: textfield;
+  -moz-appearance: textfield;
 }

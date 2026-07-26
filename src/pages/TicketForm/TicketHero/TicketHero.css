@@ -1,11 +1,9 @@
 .ticketHero {
     width: 100%;
-    aspect-ratio: 4 / 1;
-    @media screen and (max-width: 767px) {
-     aspect-ratio: 1 / 1;   
-    }
+    height: 20rem;
+    color: var(--color-bg);
     .ticketHero_textLayout {
-        padding-top: 9svw;
+        padding-top: 8svw;
         text-align: center;
         @media screen and (max-width: 767px) {
             margin: 7.5rem auto;
@@ -13,7 +11,9 @@
         }
     }
 }
-
+.ticketHero-text {
+    color: var(--color-secondary);
+}
 .ticketHeroBg {
     inset: 0;
     width: 100%;

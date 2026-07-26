@@ -10,9 +10,8 @@ export default function Ticet() {
         <Container inner="0">
           <div className="ticketHero">
             <div className="ticketHero_textLayout">
-              <p>簡単ステップで今すぐ購入</p>
-              <h2><Title text="チケットを購入する" /></h2>
-              <p>ご来援日を選んでチケットを購入できます。</p>
+              <p className="ticketHero-text">簡単ステップで今すぐ購入</p>
+              <h2><Title text="チケットを購入する" subTitle="ご来援日を選んでチケットを購入できます。"  color="white" type="hero"/></h2>
             </div>
           </div>
           <div className="ticketHeroBg"></div>

@@ -5,21 +5,13 @@
     position: relative;
     text-shadow: 0 0 4px  var(--color-bg);
     z-index: 1;
+    /* 表示箇所 */
+    /* .title--pageTitle {} */
     .title_text {
-        font-size: 1.875rem;
         font-size: clamp(1.25rem, 1.071rem + 0.89vw, 1.875rem);
         font-weight: bold;
         position: relative;
         display: inline-block;
-        &.title_text--default {
-            color: var(--color-primary);
-        }
-        &.title_text--red {
-            color: var(--color-accent);
-        }
-        &.title_text--blue {
-            color: #4B8EDF;
-        }
         &::before, &::after {
             content: '';
             top: 0.750rem;
@@ -39,9 +31,41 @@
             right: -2.1875rem;
             background-position: right top,left 0.1875rem bottom 0.125rem;
         }
+        /* 色 */
+        &.title_text--default {
+            color: var(--color-primary);
+        }
+        &.title_text--red {
+            color: var(--color-accent);
+        }
+        &.title_text--blue {
+            color: #4B8EDF;
+        }
+        &.title_text--white {
+            color: var(--color-bg);
+        }
     }
-    .title_subText{
+    .title_subText {
         display: block;
         margin-top: 0.875rem;
+    }
+    &.title--hero {
+        text-shadow: 0 0 4px  var(--color-primary);
+        .title_text {
+            font-size: 2.75rem;
+        }
+        .title_subText {
+            color: var(--color-secondary);
+        }
+    }
+    &.title--small {
+        margin-bottom: 0.75rem;
+        .title_text {
+            font-size: var(--font-md);
+            &::before,
+            &::after {
+                top: 0.25rem;
+            }
+        }
     }
 }

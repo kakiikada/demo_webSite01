@@ -1,23 +1,32 @@
 import "./TicketFlow.css";
-import Section from "../../../components/Common/Section/Section";
-import Container from "../../../components/Common/Container/Container";
-import Btn from "../../../components/Common/Btn/Btn";
 
 export default function Ticet() {
   return (
     <>
-      <Section>
-        <Container>
-          <div className="ticketFlow">
-            <ol>
-              <li><span></span><p>チケットの種類の選択<br />日付の選択</p></li>
-              <li><span></span><p>お客様情報の選択</p></li>
-              <li><span></span><p></p>確認</li>
-              <li><span></span><p>完了</p></li>
-            </ol>
-          </div>
-        </Container>
-      </Section>
+      <div className="ticketFlow">
+        <ol className="ticketFlow-list">
+          <li className="ticketFlow-list_item">
+            <div className="ticketFlow-current ticketFlow-current--active">
+              <span className="ticketFlow-current_icon ticketFlow-current_icon--ticket"></span><p className="ticketFlow-current_text">チケットの選択<br />日付の選択</p>
+            </div>
+          </li>
+          <li className="ticketFlow-list_item">
+            <div className="ticketFlow-current ticketFlow-current--active">
+              <span className="ticketFlow-current_icon ticketFlow-current_icon--user"></span><p className="ticketFlow-current_text">お客様情報の選択</p>
+            </div>
+          </li>
+          <li className="ticketFlow-list_item">
+            <div className="ticketFlow-current ticketFlow-current--active">
+            <span className="ticketFlow-current_icon ticketFlow-current_icon--confirm"></span><p className="ticketFlow-current_text">確認</p>
+            </div>
+          </li>
+          <li className="ticketFlow-list_item">
+            <div className="ticketFlow-current ticketFlow-current--active">
+              <span className="ticketFlow-current_icon ticketFlow-current_icon--complete"></span><p className="ticketFlow-current_text">完了</p>
+            </div>
+          </li>
+        </ol>
+      </div>
     </>
   );
 }

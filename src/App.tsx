@@ -1,21 +1,22 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
-import Header from "./components/Header/Header";
+import DefaultLayout from "./layouts/DefaultLayout";
+import PurchaseLayout from "./layouts/PurchaseLayout";
 import Home from "./pages/Home/Home";
 import TicketForm from "./pages/TicketForm/TicketForm";
-import Footer from "./components/Footer/Footer";
 
 
 function App() {
   return (
-    <BrowserRouter>
-      <Header />
-      <Routes>
+    <Routes>
+      <Route element={ <DefaultLayout />} >
         <Route path="/" element={<Home />} />
+
+      </Route>
+      <Route element={ <PurchaseLayout />} >
         <Route path="/TicketForm" element={<TicketForm />} />
-      </Routes>
-      <Footer />
-    </BrowserRouter>
+      </Route>
+    </Routes>
   );
 }
 

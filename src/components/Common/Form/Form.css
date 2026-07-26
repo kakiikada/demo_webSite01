@@ -1,0 +1,29 @@
+.formNum {
+    display: flex;
+    .formNum_minus,
+    .formNum_plus {
+        font-size: 0.75rem;
+        color: var(--color-bg);
+        background-color: var(--color-accent);
+        text-align: center;
+        width: 1.25rem;
+        padding: 0.125rem;
+    }
+    .formNum_minus {
+        border-radius: var(--radius-sm) 0 0 var(--radius-sm);
+        &:disabled {
+            background-color: #ccc;
+        }
+    }
+    .formNum_plus {
+        border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+         &:disabled {
+            background-color: #ccc;
+        }
+    }
+    input {
+        border-radius: 0;
+        text-align: center;
+        width: calc(100% - 2.5rem);
+    }
+}
