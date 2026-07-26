@@ -1,0 +1,46 @@
+.TicketInformation {
+    position: relative;
+    scroll-margin-top: var(--scroll-margin-top);
+    margin: 0 auto;
+    max-width: 1020px;
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 959px) {
+        flex-wrap: wrap;
+        padding-top: 11rem;
+        text-align: center;
+        justify-content: center;
+    }
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 5rem;
+        width: 7rem;
+        height: 10rem;
+        background-image: url(../../../../public/images/img-present.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        @media screen and (max-width: 959px) {
+            top: 0;
+            left: auto;
+        }
+    }
+    .TicketInformation_left {
+        padding: 0 2rem 0 12rem;
+        @media screen and (max-width: 959px) {
+            padding: 0;
+            width: 100%;
+        }
+    }
+    .TicketInformation_right {
+        @media screen and (max-width: 959px) {
+            margin-top: 1rem;
+        }
+    }
+    .TicketInformation-title {
+        font-size: var(--font-lg);
+        color: var(--color-primary);
+        font-weight: bold;
+    }
+}

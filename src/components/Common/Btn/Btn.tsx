@@ -2,7 +2,7 @@ import "./Btn.css";
 type BtnProps = {
   url: string;
   text: string;
-  size?: "small" | "medium" | "large" | "hero";
+  size?: "small" | "medium" | "large" | "hero" | "TicketInformation";
 };
 
 function Btn({ size = "medium",url,text }: BtnProps) {
