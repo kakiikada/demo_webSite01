@@ -1,3 +1,4 @@
+import { useState } from "react";
 import TicketHero from "./TicketHero/TicketHero";
 import TicketData from "./TicketData/TicketData";
 import TicketFlow from "./TicketFlow/TicketFlow"
@@ -11,6 +12,8 @@ import Container from "../../components/Common/Container/Container";
 import Btn from "../../components/Common/Btn/Btn";
 
 function TicketForm() {
+  // カレンダー用
+  const [date, setDate] = useState<Date | null>(null);
   return (
     <>
     <main>
@@ -25,12 +28,13 @@ function TicketForm() {
                   <TicketData />
                 </div> */}
                 <div>
+
                   <div className="contentFlex">
                     <div className="contentFlex_half">
                       <TicketType />
                     </div>
                     <div className="contentFlex_half">
-                      <TicketCalendar />
+                      <TicketCalendar selectedDate={date} onChangeDate={setDate}/>
                     </div>
                   </div>
 
