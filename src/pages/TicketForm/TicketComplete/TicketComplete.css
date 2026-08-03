@@ -1,0 +1,7 @@
+.ticketComplete {
+    width: 100%;
+    padding: clamp(0.5rem, 0.107rem + 1.96vw, 1.875rem);
+    background-color: #fff;
+    box-shadow: var(--shadow-red);
+    border-radius: var(--radius-lg);
+}

@@ -51,7 +51,7 @@ export default function Ticet() {
             <label htmlFor="afternoon"><p className="ticketType-addItem_title_main">アフタヌーンパス</p></label>
             <p>14:00からの入園でおトクに楽しめる！</p>
           </div>
-          <div className="ticketType-addItem_val"><p>全区分一律<br /><span className="ticketType-addItem_val_main">&#165;2,500</span></p></div>
+          <div className="ticketType-addItem_val"><p>全区分一律<span className="ticketType-addItem_val_main">&#165;2,500</span></p></div>
           <div className="ticketType-addItem_form"><FormNum id="afternoon" value={afternoon} onChange={setAfternoon} /></div> 
         </div>
       </div>

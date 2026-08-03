@@ -12,6 +12,7 @@
         font-weight: bold;
         position: relative;
         display: inline-block;
+        padding: 0 2rem;
         &::before, &::after {
             content: '';
             top: 0.750rem;
@@ -24,11 +25,11 @@
             background-size: 1.25rem, 0.625rem ;
         }
         &::before {
-            left: -2.1875rem;
+            left: -0.1875rem;
             background-position: left top,right 0.1875rem bottom 0.125rem;
         }
         &::after {
-            right: -2.1875rem;
+            right: -0.1875rem;
             background-position: right top,left 0.1875rem bottom 0.125rem;
         }
         /* 色 */

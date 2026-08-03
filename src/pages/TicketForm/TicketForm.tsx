@@ -1,22 +1,20 @@
 import { useState } from "react";
+import "./TicketForm.css";
 import TicketHero from "./TicketHero/TicketHero";
 import TicketData from "./TicketData/TicketData";
-import TicketFlow from "./TicketFlow/TicketFlow"
-import TicketType from "./TicketType/TicketType"
-import TicketCalendar from "./TicketCalendar/TicketCalendar"
-import TicketInfo from "./TicketInfo/TicketInfo"
-import TicketConfirm from "./TicketConfirm/TicketConfirm"
-import TicketComplete from "./TicketComplete/TicketComplete"
+import TicketFlow from "./TicketFlow/TicketFlow";
+import TicketFlow1 from "./TicketFlow1/TicketFlow1";
+import TicketInfo from "./TicketInfo/TicketInfo";
+import TicketConfirm from "./TicketConfirm/TicketConfirm";
+import TicketComplete from "./TicketComplete/TicketComplete";
 import Section from "../../components/Common/Section/Section";
 import Container from "../../components/Common/Container/Container";
 import Btn from "../../components/Common/Btn/Btn";
 
 function TicketForm() {
-  // カレンダー用
-  const [date, setDate] = useState<Date | null>(null);
   return (
     <>
-    <main>
+    <main className="ticketForm">
       <TicketHero />
       <div className="contentBg-wave">
         <form action="">
@@ -28,16 +26,9 @@ function TicketForm() {
                   <TicketData />
                 </div> */}
                 <div>
-
-                  <div className="contentFlex">
-                    <div className="contentFlex_half">
-                      <TicketType />
-                    </div>
-                    <div className="contentFlex_half">
-                      <TicketCalendar selectedDate={date} onChangeDate={setDate}/>
-                    </div>
+                  <div>
+                    <TicketFlow1 />
                   </div>
-
                   <div>
                     <TicketInfo />
                   </div>
